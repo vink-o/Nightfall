@@ -1,58 +1,11 @@
+#include "Lore.h"
+#include "Start.h"
 #include<iostream>
 #include<ctime>
 #include<string>
 #include<fstream>
 #include <cstdlib>
 using namespace std;
-
-void Start()
-{
-    cout << R"(
-
-                 / \  //\
-        |\___/|      /   \//  .\
-        /O  O  \__  /    //  | \ \
-       /     /  \/_/    //   |  \  \
-       @_^_@'/   \/_   //    |   \   \
-       //_^_/     \/_ //     |    \    \
-    ( //) |        \///      |     \     \
-  ( / /) _|_ /   )  //       |      \     _
-( // /) '/,_ _ _/  ( ; -.    |    _ _\.-~        .-~~~^-.
-(( // )) ,-{        _      `-.|.-~-.           .~         `.
-(( /// ))  '/\      /                 ~-. _ .-~      .-~^-.  \
-(( ///))      `.   {            }                 /      \  \
- ((/ ))     .----~-.\        \-'               .~         \  `. \^-. 
-           ///.----..>        \            _ -~             `.  ^-`  ^-_
-             ///-._ _ _ _ _ _ _}^ - - - - ~                     ~-- ,.-~ )";
-
-    cout<<" "<<endl;
-    cout<<" "<<endl;
-    cout<<" "<<endl;
-    cout<<"[Press ENTER to start game]"<<endl;
-    cin.ignore();
-    cin.get();
-}
-
-void lore()
-{
-    string line;
-    ifstream Lore("Lore.txt");
-
-    if(!Lore.is_open())
-    {
-        cout<<"Lore cannot be open now!"<<endl;
-        return;
-    }
-
-    while(getline(Lore,line))
-        cout<<line<<endl;
-
-    Lore.close();
-    cout<<"[Press ENTER to go back]"<<endl;
-
-    cin.ignore();
-    cin.get();
-}
 
 void MainMenu()
 {
@@ -81,7 +34,7 @@ void MainMenu()
         else if(i==2)
         {
             system("cls");
-            lore();
+            Lore();
         }
         else if(i==3)
         {
