@@ -2,6 +2,9 @@
 #define CHARACTER_H
 
 #include<string>
+#include<vector>
+
+enum Role {Warrior, Healer, Miner, Hunter, Builder};
 
 class Character
 {

@@ -7,6 +7,7 @@ class Map
         char grid[50][100];
     public:
         void Setting();
+        void BuildLand();
 };
 
 #endif
