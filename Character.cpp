@@ -14,3 +14,4 @@ void Character :: Set(double damage,double HP,std::string position,double popula
     this -> population=0;
     this -> energy=0;
 }
+
