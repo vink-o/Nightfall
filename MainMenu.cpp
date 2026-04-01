@@ -1,5 +1,6 @@
 #include "Lore.h"
 #include "Start.h"
+#include "MainMenu.h"
 #include<iostream>
 #include<ctime>
 #include<string>
@@ -48,9 +49,8 @@ void MainMenu()
     }
 }
 
-int main()
+void game()
 {
     srand(time(0));
     MainMenu();
-    return 0;
 }
