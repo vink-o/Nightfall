@@ -21,9 +21,22 @@ void Map :: BuildLand()
     int herb = 15;
     int mine = 5;
     int lake = 10;
+    int tree = 10;
 
     if(grid[25][50]== '+') // postavljanje baze u centar mape
         grid[25][50]='ô';
+    
+    while(tree!=0)
+    {
+        int x = rand() % 50;
+        int y = rand() % 100;
+
+        if(grid[x][y]=='+')
+        {
+            grid[x][y]='♣';
+            tree --;
+        }
+    }
 
     while(lake!=0)
     {

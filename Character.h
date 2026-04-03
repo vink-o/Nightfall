@@ -4,7 +4,7 @@
 #include<string>
 #include<vector>
 
-enum Role {Warrior, Healer, Miner, Hunter, Builder, Lumbejack};
+enum Role {Warrior, Healer, Miner, Hunter, Builder, Lumberjack};
 
 class Character
 {

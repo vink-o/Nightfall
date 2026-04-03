@@ -19,7 +19,7 @@ void MainMenu()
         cout << "                N I G H T F A L L                 " << endl;
         cout << "--------------------------------------------------" << endl;
         cout << "  [1] START GAME          [2] LORE                " << endl;
-        cout << "  [3] BEST SCORES         [4] EXIT                " << endl;
+        cout << "  [3] BEST SCORES         [4] LOG OUT             " << endl;
         cout << "==================================================" << endl;
         cout << " Choice:";
 
