@@ -11,71 +11,107 @@ class Character
     protected:
         double damage;
         double HP;
-        std::string position;
+        std::string role;
         double population;
+        int x,y;
+        char symbol;
     public:
         void Set(double damage,double HP,std::string position, double population);
+        int GetX(){return x;}
+        int GetY(){return y;}
+
+        void Set(double d, double hp, int StartX, int StartY)
+        {
+            damage=d;
+            HP=hp;
+            x=StartX;
+            y=StartY;
+        }
         
 };
 
 class LUMBERJACK : public Character
 {
-    LUMBERJACK()
-    {
-        this->HP=100;
-        this->damage=15;
-        this->position="Lumberjack";
-    }
+    public:
+        LUMBERJACK(int StartX, int StartY)
+        {
+            this->HP=100;
+            this->damage=15;
+            this->role="Lumberjack";
+            this -> x = StartX;
+            this -> y = StartY;
+            this -> symbol = 'L';
+        }
 };
 
 class WARRIOR : public Character
 {
-    WARRIOR()
-    {
-        this->HP=150;
-        this->damage=20;
-        this->position="Warrior";
-    }
+    public:
+        WARRIOR(int StartX, int StartY)
+        {
+            this->HP=150;
+            this->damage=20;
+            this->role="Warrior";
+            this -> x = StartX;
+            this -> y = StartY;
+            this -> symbol = 'W';
+        }
 };
 
 class HEALER : public Character
 {
-    HEALER()
-    {
-        this->HP=70;
-        this->damage=5;
-        this->position="Healer";
-    }
+    public:
+        HEALER(int StartX, int StartY)
+        {
+            this->HP=70;
+            this->damage=5;
+            this->role="Healer";
+            this -> x = StartX;
+            this -> y = StartY;
+            this -> symbol = 'H';
+        }
 };
 
 class MINER : public Character
 {
-    MINER()
-    {
-        this->HP=120;
-        this->damage=10;
-        this->position="Miner";
-    }
+    public:
+    MINER(int StartX, int StartY)
+        {
+            this->HP=120;
+            this->damage=10;
+            this->role="Miner";
+            this -> x = StartX;
+            this -> y = StartY;
+            this -> symbol = 'M';
+        }
 };
 
 class HUNTER : public Character
 {
-    HUNTER()
-    {
-        this->HP=100;
-        this->damage=12;
-        this->position="Hunter";
-    }
+    public:
+        HUNTER(int StartX, int StartY)
+        {
+            this->HP=100;
+            this->damage=12;
+            this->role="Hunter";
+            this -> x = StartX;
+            this -> y = StartY;
+            this -> symbol = 'h';
+        }
 };
 
 class BUILDER : public Character
 {
-    BUILDER()
-    {
-        this->HP=90;
-        this->damage=7;
-        this->position="Builder";
-    }
+    public:
+        BUILDER(int StartX, int StartY)
+        {
+            this->HP=90;
+            this->damage=7;
+            this->role="Builder";
+            this -> x = StartX;
+            this -> y = StartY;
+            this -> symbol = 'B';
+        }
 };
 
 #endif
