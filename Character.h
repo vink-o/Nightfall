@@ -4,7 +4,7 @@
 #include<string>
 #include<vector>
 
-enum Role {Warrior, Healer, Miner, Hunter, Builder};
+enum Role {Warrior, Healer, Miner, Hunter, Builder, Lumbejack};
 
 class Character
 {
@@ -13,10 +13,19 @@ class Character
         double HP;
         std::string position;
         double population;
-        double energy;
     public:
-        void Set(double damage,double HP,std::string position, double population,double energy);
+        void Set(double damage,double HP,std::string position, double population);
         
+};
+
+class LUMBERJACK : public Character
+{
+    LUMBERJACK()
+    {
+        this->HP=100;
+        this->damage=15;
+        this->position="Lumberjack";
+    }
 };
 
 class WARRIOR : public Character

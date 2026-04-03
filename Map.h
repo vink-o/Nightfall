@@ -3,7 +3,7 @@
 
 class Map
 {
-    private:
+    protected:
         char grid[50][100];
     public:
         void Setting();
