@@ -16,7 +16,7 @@ class Character
         int x,y;
         char symbol;
     public:
-        void Set(double damage,double HP,std::string position, double population);
+        void Set(double damage,double HP,std::string role, double population);
         int GetX(){return x;}
         int GetY(){return y;}
 

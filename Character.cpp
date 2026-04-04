@@ -6,11 +6,11 @@
 #include <cstdlib>
 using namespace std;
 
-void Character :: Set(double damage,double HP,std::string position,double population)
+void Character :: Set(double damage,double HP,std::string role,double population)
 {
     this -> damage=0;
     this -> HP=0;
-    this -> position=" ";
+    this -> role="";
     this -> population=0;
 }
 

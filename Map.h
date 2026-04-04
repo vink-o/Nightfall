@@ -16,9 +16,9 @@ class Map
             for(int i=0;i<50;i++)
             {
                 for(int j=0;j<100;j++)
-                    cout<<grid[i][j];
+                    std::cout<<grid[i][j];
 
-                cout<<endl;
+                std::cout<<std::endl;
             }
         };
 };
