@@ -8,8 +8,9 @@
 #include <cstdlib>
 using namespace std;
 
-void MainMenu()
+void MainMenu(sqlite3* DB, std::string username)
 {
+    srand(time(0));
     int n=10;
 
     while(n!=4)
@@ -49,8 +50,3 @@ void MainMenu()
     }
 }
 
-void game()
-{
-    srand(time(0));
-    MainMenu();
-}
