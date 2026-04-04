@@ -1,3 +1,4 @@
 sqlite3.c linguist-vendored=true
 sqlite3.h linguist-vendored=true
-
+sqlite3.c linguist-documentation=true
+sqlite3.h linguist-documentation=true
