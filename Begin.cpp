@@ -5,6 +5,7 @@
 #include<fstream>
 #include <cstdlib>
 #include "sqlite3.h"
+#include "HandleLogin.h"
 using namespace std;
 
 void begin()
